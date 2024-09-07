@@ -1,0 +1,12 @@
+/Users/mark/polar-service/src/main/java/service/domain/Book.java
+/Users/mark/polar-service/src/main/java/service/controller/BookControllerAdvice.java
+/Users/mark/polar-service/src/main/java/service/domain/exceptions/BookNotFoundException.java
+/Users/mark/polar-service/src/main/java/service/demo/BookDataLoader.java
+/Users/mark/polar-service/src/main/java/service/config/PolarProperties.java
+/Users/mark/polar-service/src/main/java/service/config/DataConfig.java
+/Users/mark/polar-service/src/main/java/service/domain/exceptions/BookAlreadyExistsException.java
+/Users/mark/polar-service/src/main/java/service/Starter.java
+/Users/mark/polar-service/src/main/java/service/controller/BookController.java
+/Users/mark/polar-service/src/main/java/service/HomeController.java
+/Users/mark/polar-service/src/main/java/service/domain/BookRepository.java
+/Users/mark/polar-service/src/main/java/service/domain/BookService.java

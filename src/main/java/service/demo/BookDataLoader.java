@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 import service.domain.Book;
 import service.domain.BookRepository;
 
+import java.util.List;
+
 @Component
 @Profile("testdata")
 public class BookDataLoader {
@@ -18,10 +20,10 @@ public class BookDataLoader {
     }
 
     @EventListener(ApplicationReadyEvent.class)
-    public void loadBookTestData(){
-        var book1 = new Book("1234567891", "Suka blyat", "Polish Kurwa", 9.90);
-        var book2 = new Book("1234567892", "GOAT", "Mark Davletov", 29.09);
-        repository.save(book1);
-        repository.save(book2);
+    public void loadBookTestData() {
+        repository.deleteAll();
+        var book1 = Book.of("1234567891", "Northern Lights", "Lyra Silverstar", 9.90);
+        var book2 = Book.of("1234567892", "Polar Journey", "Iorek Polarson", 12.90);
+        repository.saveAll(List.of(book1, book2));
     }
 }
